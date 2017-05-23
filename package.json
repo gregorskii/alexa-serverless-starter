@@ -1,0 +1,20 @@
+{
+  "name": "alexa-serverless-starter",
+  "version": "1.0.0",
+  "description": "Alexa Serverless Starter with Unit Testing",
+  "author": "gregorskii",
+  "license": "MIT",
+  "repository": "git@github.com:gregorskii/alexa-serverless-starter.git",
+  "dependencies": {
+    "alexa-sdk": "^1.0.9"
+  },
+  "devDependencies": {
+    "alexa-conversation": "^0.1.0",
+    "babel-core": "^6.24.1",
+    "babel-plugin-inline-dotenv": "^1.1.1",
+    "mocha": "^3.4.1"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test && ./node_modules/.bin/mocha './test/**/spec.*' --compilers js:babel-core/register --recursive"
+  }
+}

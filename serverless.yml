@@ -1,0 +1,15 @@
+service: alexa-lab
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  profile: //REMOVE for default profile or add an AWS profile
+
+functions:
+  helloworld:
+    handler: handlers/helloworld/handler.helloworld
+    memory: 512
+    timeout: 60
+    events:
+      - alexaSkill
